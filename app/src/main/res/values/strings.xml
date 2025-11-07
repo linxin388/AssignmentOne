@@ -1,0 +1,8 @@
+<resources>
+<string name="app_name_campus">CampusLife</string>
+    <string name="app_name">CampusLife</string>
+<string name="facilities">Facilities</string>
+<string name="events">Events</string>
+<string name="clubs">Clubs</string>
+<string name="support">Support</string>
+</resources>
