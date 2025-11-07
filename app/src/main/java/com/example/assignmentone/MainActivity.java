@@ -1,11 +1,15 @@
 package com.example.assignmentone;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
+/**
+ * MainActivity - Main screen with four feature buttons
+ * Handles navigation to DetailActivity based on button clicks
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,40 +17,58 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Facilities button click
+        setupButtonClickListeners();
+    }
+
+    /**
+     * Set up click listeners for all four image buttons
+     * Each button starts DetailActivity with unique ID
+     */
+    private void setupButtonClickListeners() {
+        // Facilities button - ID 0
         ImageButton btnFacilities = findViewById(R.id.btnFacilities);
         btnFacilities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Facilities clicked", Toast.LENGTH_SHORT).show();
+                startDetailActivity(0); // 0 represents Facilities
             }
         });
 
-        // Events button click
+        // Events button - ID 1
         ImageButton btnEvents = findViewById(R.id.btnEvents);
         btnEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Events clicked", Toast.LENGTH_SHORT).show();
+                startDetailActivity(1); // 1 represents Events
             }
         });
 
-        // Clubs button click
+        // Clubs button - ID 2
         ImageButton btnClubs = findViewById(R.id.btnClubs);
         btnClubs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Clubs clicked", Toast.LENGTH_SHORT).show();
+                startDetailActivity(2); // 2 represents Clubs
             }
         });
 
-        // Support button click
+        // Support button - ID 3
         ImageButton btnSupport = findViewById(R.id.btnSupport);
         btnSupport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Support clicked", Toast.LENGTH_SHORT).show();
+                startDetailActivity(3); // 3 represents Support
             }
         });
+    }
+
+    /**
+     * Start DetailActivity with specific button ID
+     * @param buttonId Unique identifier for each feature (0-3)
+     */
+    private void startDetailActivity(int buttonId) {
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        intent.putExtra("BUTTON_ID", buttonId);
+        startActivity(intent);
     }
 }
