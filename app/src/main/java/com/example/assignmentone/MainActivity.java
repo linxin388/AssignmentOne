@@ -1,10 +1,10 @@
 package com.example.assignmentone;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
         btnFacilities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Facilities clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                intent.putExtra("BUTTON_ID", 0); // 0 for Facilities
+                startActivity(intent);
             }
         });
 
@@ -27,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         btnEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Events clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                intent.putExtra("BUTTON_ID", 1); // 1 for Events
+                startActivity(intent);
             }
         });
 
@@ -36,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
         btnClubs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Clubs clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                intent.putExtra("BUTTON_ID", 2); // 2 for Clubs
+                startActivity(intent);
             }
         });
 
@@ -45,7 +51,9 @@ public class MainActivity extends AppCompatActivity {
         btnSupport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Support clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                intent.putExtra("BUTTON_ID", 3); // 3 for Support
+                startActivity(intent);
             }
         });
     }
