@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>Facilities</item>
+        <item>Events</item>
+        <item>Clubs</item>
+        <item>Support</item>
+    </string-array>
+
+    <string-array name="details">
+        <item>University facilities include libraries, sports centers, computer labs, and study spaces available for all students.</item>
+        <item>Upcoming events: Orientation week, Career fair, Cultural festival, Sports competitions.</item>
+        <item>Student clubs: Programming Club, Sports Club, Music Club, Debate Society, Photography Club.</item>
+        <item>Support services: Academic advising, Counseling, Health services, Career guidance, Financial aid.</item>
+    </string-array>
+
+    <string-array name="images">
+        <item>img_btn_facilities</item>
+        <item>img_btn_events</item>
+        <item>img_btn_clubs</item>
+        <item>img_btn_support</item>
+    </string-array>
+</resources>
