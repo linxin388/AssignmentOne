@@ -10,10 +10,11 @@
         android:id="@+id/titleBanner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/app_name_campus"
-        android:textSize="40sp"
+        android:text="@string/welcome_banner"
+        android:textSize="24sp"
         android:gravity="center"
         android:padding="20dp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

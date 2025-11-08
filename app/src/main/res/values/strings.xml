@@ -8,4 +8,5 @@
     <string name="back">Back</string>
     <string name="title">Title</string>
     <string name="content_placeholder">Content details will be displayed here...</string>
+    <string name="welcome_banner">Welcome to CampusLife - Your Pocket Guide to University of Waikato</string>
 </resources>

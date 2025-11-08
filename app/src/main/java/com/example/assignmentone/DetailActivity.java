@@ -1,5 +1,4 @@
 package com.example.assignmentone;
-//Lin Gemi 20233006402
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
