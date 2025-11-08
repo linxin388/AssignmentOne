@@ -8,10 +8,10 @@
     </string-array>
 
     <string-array name="details">
-        <item>University facilities include libraries, sports centers, computer labs, and study spaces available for all students.</item>
-        <item>Upcoming events: Orientation week, Career fair, Cultural festival, Sports competitions.</item>
-        <item>Student clubs: Programming Club, Sports Club, Music Club, Debate Society, Photography Club.</item>
-        <item>Support services: Academic advising, Counseling, Health services, Career guidance, Financial aid.</item>
+        <item>University facilities include libraries, sports centers, computer labs, study spaces, cafeterias, student lounges, parking areas, and wellness centers available for all students. Our libraries offer 24/7 access during exam periods and provide group study rooms, quiet zones, and research assistance.</item>
+        <item>Upcoming events: Orientation week for new students, Annual Career fair with top employers, Cultural festival celebrating diversity, Sports competitions and tournaments, Academic workshops, Guest speaker series, Club recruitment days, and End-of-year celebrations.</item>
+        <item>Student clubs: Programming Club for coding enthusiasts, Sports Club for various athletic activities, Music Club for instrumental and vocal performances, Debate Society for public speaking, Photography Club, Art and Design Club, Environmental Club, and International Students Association.</item>
+        <item>Support services: Academic advising for course planning, Counseling services for mental health, Health services and medical care, Career guidance and job placement, Financial aid and scholarships, Disability support services, International student support, and 24/7 emergency assistance.</item>
     </string-array>
 
     <string-array name="images">
